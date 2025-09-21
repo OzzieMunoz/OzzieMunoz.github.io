@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="css-styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/csumb.png" alt="CSUMB Name Logo" height="60">
+
+        <nav>
+            <a href="index.html">INTRODUCTION</a>
+            <a href="getting-started.html" class="active">GETTING STARTED</a>
+            <a href="branches-projects.html">BRANCHES & PROJECTS</a>
+            <a href="collaboration.html">COLLABORATION</a>
+        </nav>
+    </header>
+
+    <hr class="goldHr">
+
+    <main>
+        <h2 class="subHeader">Getting Started</h2>
+
+        <p>Create a repo, add files, and learn a few shortcuts.</p>
+
+        <hr>
+
+        <section class="mainBody">
+            <h2>Create a repository</h2>
+
+            <ol>
+                <li>Click New from the GitHub header or your profile.</li>
+                <li>Name the repo (e.g., <code>hello-world</code>) and choose Public or Private.</li>
+                <li>Click Create repository. In Settings, add a short description and topics.</li>
+                <li>Add a <code>README.md</code> explaining what the project does and how to run it.</li>
+            </ol>
+        </section>
+
+        <figure>
+            <img src="img/getting-started.png" alt="Create a new repository" width="800">
+        </figure>
+
+        <section class="mainBody">
+            <h2>Work from your IDE</h2>
+
+            <ol>
+                <li>On your repo page, click Code → choose Open with GitHub Desktop (or your IDE of choice) to clone locally.</li>
+                <li>Open the folder in your IDE. Make small changes and save.</li>
+                <li>Use your IDE or GitHub Desktop to stage and commit with a short message (e.g., “Add README”).</li>
+                <li>Push to GitHub so the repo updates online.</li>
+            </ol>
+
+            <p>Tip: you can also add files via the web UI (<em>Add file → Upload files</em>) whenever that’s quicker.</p>
+        </section>
+
+        <figure>
+            <img src="img/getting-started-2.png" alt="hello-world repository page" width="800">
+        </figure>
+
+        <section class="mainBody">
+            <h2>First commit tips</h2>
+
+            <p>
+                Make the first commit small. Add the README, maybe a starter file and write a short message
+                like “Add README.” If you want people to reuse your code, drop in a LICENSE. Keep polishing 
+                the README as the project grows; future you (and recruiters) will thank you.
+            </p>
+        </section>
+
+        <section class="mainBody">
+            <h2>Git Commands</h2>
+
+            <p>
+                Even when working from an IDE, knowing the underlying Git commands is useful.
+                The commands below cover the core workflow—clone → change → add → commit → push—
+                plus branch and history tools. Use this table as a quick reference.
+            </p>
+
+            <h3>Some of the most important/common commands are:</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Command</th><th>What it does</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>git clone [url]</code></td>
+                        <td>Make a local copy of an existing GitHub repository.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git status</code></td>
+                        <td>Shows the current branch and which files are modified, staged, or untracked.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git branch</code></td>
+                        <td>Lists your local branches. Use <code>git branch [name]</code> to create one, or <code>git branch --all</code> to see both local and remote-tracking branches.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git checkout [branch-name]</code></td>
+                        <td>Switch your working directory to the named branch.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git add [file]</code></td>
+                        <td>Stages the file—queues its changes so they’re included in the next commit.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git commit -m &quot;descriptive message&quot;</code></td>
+                        <td>Records the staged changes as a snapshot in history with a message explaining the update.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git pull</code></td>
+                        <td>Updates your current branch with commits from the remote branch (essentially fetch followed by merge).</td>
+                    </tr>
+                    <tr>
+                        <td><code>git push</code></td>
+                        <td>Publishes your local commits to the repository’s remote.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git log</code></td>
+                        <td>Lets you scroll through commit history and messages.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git remote -v</code></td>
+                        <td>Shows the configured remotes and their URLs (e.g., the <code>origin</code> remote).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="mainNav">
+            <a id="prevPage" href="index.html">&lsaquo; INTRODUCTION</a>
+            <a id="nextPage" href="branches-projects.html">BRANCHES & PROJECTS &rsaquo;</a>
+        </div>
+
+        <p class="sources">Sources: 
+            <a href="https://docs.github.com/en/get-started/start-your-journey/hello-world" 
+            target="_blank">GitHub Docs</a>, 
+            <a href="https://github.com/git-guides" target="_blank">Git Guides</a>
+        </p>
+    </main>
+
+    <hr class="goldHr">
+
+    <footer>
+        <img src="img/logo.png" alt="CSUMB Otter Logo" height="80">
+
+        <p>
+            CST336 Internet Programming © 2025 Munoz
+            <br> This page is student work for academic purposes only.
+        </p> 
+    </footer>
+    
+</body>
+</html>

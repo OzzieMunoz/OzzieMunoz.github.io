@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="css-styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/csumb.png" alt="CSUMB Name Logo" height="60">
+        
+        <nav>
+            <a href="index.html">INTRODUCTION</a>
+            <a href="getting-started.html">GETTING STARTED</a>
+            <a href="branches-projects.html" class="active">BRANCHES & PROJECTS</a>
+            <a href="collaboration.html">COLLABORATION</a>
+        </nav>
+    </header>
+
+    <hr class="goldHr">
+
+    <main>
+        <h2 class="subHeader">Branches & Projects</h2>
+        <p>Use branches for focused changes and a project board to organize what’s next.</p>
+
+        <hr>
+
+        <section class="mainBody">
+            <h2>How branches work</h2>
+
+            <p>
+                A branch is basically your safe playground. Do your edits there while main stays clean and functional. 
+                Choose intent-revealing names like <code>readme-update</code> or <code>feature/contact-form</code>. Create 
+                the branch, switch to it in your IDE, and make incremental commits with descriptive messages. After 
+                testing, push the branch and open a pull request to propose merging into main.
+            </p>
+        </section>
+
+        <figure>
+            <img src="img/branches-projects.png" alt="Branching diagram" width="800">
+            <figcaption>Image source: 
+                <a href="https://csil.cs.uchicago.edu/gitcourse"
+                target="_blank">Introduction to Git</a>, CSIL (n.d.). 
+                Used under fair use for educational purposes.
+            </figcaption>
+        </figure>
+
+        <section class ="mainBody">
+            <h2>Set up a Project</h2>
+
+            <p>Projects help you track to-dos, bugs, and priorities. Boards show status at a glance.</p>
+
+            <ol>
+                <li>Go to the Projects tab (repo or profile) → New project (Board or Table).</li>
+                <li>Add a Status field or columns like <em>To do, In progress, Done</em>.</li>
+                <li>Add existing Issues or write draft notes; drag cards to update status.</li>
+                <li>Use labels, assignees, and milestones to show ownership and timing.</li>
+                <li>Create views/filters (e.g., “My tasks” or “This week”) to focus the board.</li>
+            </ol>
+
+            <p>Break work up into small tasks, link related issues/PRs, and update the board as you go.</p>
+        </section>
+
+        <div class="mainNav">
+            <a id="prevPage" href="getting-started.html">&lsaquo; GETTING STARTED</a>
+            <a id="nextPage" href="collaboration.html">COLLABORATION  &rsaquo;</a>
+        </div>
+
+        <p class="sources">Sources: 
+            <a href="https://docs.github.com/en/get-started/start-your-journey/hello-world" 
+            target="_blank">GitHub Docs</a>, 
+            <a href="https://github.com/git-guides" target="_blank">Git Guides</a>
+        </p>
+    </main>
+
+    <hr class="goldHr">
+
+    <footer>
+        <img src="img/logo.png" alt="CSUMB Otter Logo" height="80">
+
+        <p>
+            CST336 Internet Programming © 2025 Munoz
+            <br> This page is student work for academic purposes only.
+        </p> 
+    </footer>
+    
+</body>
+</html>

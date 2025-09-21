@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    background-color: rgb(239,239,239);
+    font-family: "Roboto", sans-serif;
+}
+header {
+    background-color: rgb(65,105,91);
+    padding-bottom: 16px;
+}
+header img {
+    margin: 16px;
+    margin-left: 32px;
+}
+header nav {
+    margin-left: 32px;
+}
+nav {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+nav a {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: rgb(239,239,239);
+    color: rgb(0,48,87);
+    font-weight: 550;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+.active {
+    box-shadow: 2px 2px 8px black;
+    background-color: rgb(186, 186, 186);
+}
+a:hover {
+    transform: scale(1.15);
+}
+.active:hover {
+    transform: none;
+}
+.goldHr {
+    margin: 0;
+    border: 0;
+    height: 8px;
+    background: rgb(158,139,80);
+}
+main {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: 800px;
+    margin: auto;
+    margin-top: 40px;
+}
+.mainHeader {
+    font-size: 3rem;
+    margin: 0;
+}
+.authorName {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+}
+hr {
+    height: 2px;
+    background: black;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+figure{
+    display: table;
+    margin: auto;
+    margin-top: 48px;
+}
+figcaption {
+    text-align: left;
+    font-size: 0.8rem;
+    color: rgb(75, 75, 75);
+}
+.mainBody {
+    margin-top: 40px;
+}
+.subHeader {
+    font-size: 2rem;
+    margin: 0;
+}
+code {
+    background-color: rgba(128, 128, 128, 0.20);
+    font-size: 0.95rem;
+}
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+thead {
+    background-color: rgba(0, 48, 87, 0.4);
+}
+th {
+    text-align: left;
+    padding: 6px;
+    border: 2px solid black;
+}
+tbody {
+    background-color: rgba(65,105,91, 0.4)
+}
+td {
+    padding: 6px;
+    border: 2px solid black;
+}
+.mainNav {
+    display: flex;
+    margin-top: 40px;
+}
+.mainNav a{
+    display: inline-block;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: rgb(0,48,87);
+    color: rgb(239,239,239);
+    margin-top: 24px;
+    font-weight: 550;
+    text-decoration: none;
+}
+#prevPage {
+    margin-right: auto;
+}
+#nextPage {
+    margin-left: auto;
+}
+.sources {
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+footer {
+    background-color: rgb(0,48,87);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer img {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 4px;
+}
+footer p {
+    color: rgb(239,239,239);
+}

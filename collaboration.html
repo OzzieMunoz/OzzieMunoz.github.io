@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="css-styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/csumb.png" alt="CSUMB Name Logo" height="60">
+        
+        <nav>
+            <a href="index.html">INTRODUCTION</a>
+            <a href="getting-started.html"  >GETTING STARTED</a>
+            <a href="branches-projects.html">BRANCHES & PROJECTS</a>
+            <a href="collaboration.html" class="active">COLLABORATION</a>
+        </nav>
+    </header>
+
+    <hr class="goldHr">
+
+    <main>
+        <h2 class="subHeader">Collaboration</h2>
+
+        <p>Propose changes with pull requests and track work with issues so your team stays in sync.</p>
+
+        <hr>
+
+        <figure>
+            <img src="img/collaboration.png" alt="Pull request workflow" width="800">
+            <figcaption>Image source: 
+                <a href="https://support.atlassian.com/bitbucket-cloud/docs/use-pull-requests-for-code-review/"
+                target="_blank">Use pull requests for code review</a>, Bitbucket Support (n.d.). 
+                Used under fair use for educational purposes.
+            </figcaption>
+        </figure>
+
+        <section class="mainBody">
+            <h2>Pull Requests (PRs)</h2>
+
+            <p>A PR bundles your branch’s commits, shows the diff, lets people comment on lines, and can run checks before merge.</p>
+
+            <h3>Open and merge a PR</h3>
+
+            <ol>
+                <li>Push your branch, then click Compare & pull request.</li>
+                <li>Write a clear title and short description (what changed and why).</li>
+                <li>Request reviewers; address feedback with follow-up commits from your IDE.</li>
+                <li>When checks pass and it’s approved, click Merge and delete the branch if finished.</li>
+            </ol>
+
+            <p>Why teams use PRs: review, visibility, automated checks, and a permanent record of decisions.</p>
+        </section>
+
+        <section class="mainBody">
+            <h2>Issues</h2>
+
+            <p>Issues capture tasks, bugs, ideas, and link directly to code and PRs.</p>
+
+            <h3>Use Issues effectively</h3>
+
+            <p>
+                Give the issue a clear title. In the description, state the goal of the issue; how will we know 
+                it’s finished?. Add labels (e.g., <code>bug</code>) so it’s easy to filter and add a milestone if 
+                there’s a due date. When the related PR is ready, include which issue it resolves: for example, 
+                <code>Fixes #123</code>. After that PR merges to main, the issue closes automatically and the 
+                cross-references are recorded.
+            </p>
+        </section>
+        
+
+        <section class="mainBody">
+            <h2>Team habits that help</h2>
+
+            <p>
+                Use descriptive branch names (like <code>feature/login</code>) so reviewers immediately know the 
+                goal. Keep PRs small and focused by dropping in a screenshot or a tiny checklist to show what changed. 
+                Keep the README and project board updated. Maintain a clean README and an honest project board so the 
+                repo works as a solid portfolio piece.
+            </p>
+        </section>
+
+        <div class="mainNav">
+            <a id="prevPage" href="branches-projects.html">&lsaquo; BRANCHES & PROJECTS</a>
+        </div>
+
+        <p class="sources">Sources: 
+            <a href="https://docs.github.com/en/get-started/start-your-journey/hello-world" 
+            target="_blank">GitHub Docs</a>, 
+            <a href="https://github.com/git-guides" target="_blank">Git Guides</a>
+        </p>
+    </main>
+
+    <hr class="goldHr">
+
+    <footer>
+        <img src="img/logo.png" alt="CSUMB Otter Logo" height="80">
+
+        <p>
+            CST336 Internet Programming © 2025 Munoz
+            <br> This page is student work for academic purposes only.
+        </p> 
+    </footer>
+    
+</body>
+</html>
