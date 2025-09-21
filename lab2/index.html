@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2: Guess the Number!</title>
+    <link href="css/css_selectors.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Guess the Number!</h1>
+    </header>
+
+    <hr class="divider">
+
+    <main>
+        <input id="guessBox" type="number" min="1" max="99" size="5" placeholder="1-99">
+        <button id="guessBtn">Guess!</button>
+
+        <br>
+
+        <button id="playAgainBtn">Play Again!</button>
+
+        <br>
+
+        <div id="feedback" aria-live="polite"></div>
+
+        <h3 id="msgBox"></h3>
+
+        <h3>Previous Guesses:</h3>
+        <div id="guesses"></div>
+
+        <br>
+
+        <h3>Number of Guesses:</h3>
+        <div id="numGuesses"></div>
+
+        <h3>Wins / Losses</h3>
+        <div><span id="winsCount">0</span> / <span id="lossesCount">0</span></div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

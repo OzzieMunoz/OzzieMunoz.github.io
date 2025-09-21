@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(100, 100, 100);
+}
+header {
+    background-color: rgb(100, 100, 100);
+}
+main{
+    background-color: grey;
+}
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 6px solid darkred;
+    outline: 1px solid white;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-size:max(2vw, 7vw); 
+    margin:0 auto;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+#row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgClass {
+    border: 10px black;
+}
+.bodyText {
+    text-align: center; 
+}
+em {
+    text-align: center;
+}
+nav { 
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+a {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: darkred;
+    color: white;
+}
+a:hover {
+    transform: scale(1.15);
+}
+.active {
+    box-shadow: 4px 4px 16px black;
+}
+.tableClass {
+    width: 30%;
+    margin: auto;
+    border: 2px solid white;
+}
+tr {
+    background-color: lightcyan;
+}
+th {
+    background-color: lightskyblue;
+}
+.hobbies {
+  text-align: center;
+  margin: 24px 0;
+}
+ul {
+    display: inline-block;      
+    text-align: left;         
+    margin: auto;   
+}
+.form {
+    max-width: 700px; 
+    margin: auto; 
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(100, 100, 100);
+}
+.footerImg { 
+    display: block;
+    height: 100px; 
+    width: auto;
+}
+.footerText {
+    color: rgb(2, 42, 78);
+    font-size: 0.9rem;
+    margin: 0;
+}     

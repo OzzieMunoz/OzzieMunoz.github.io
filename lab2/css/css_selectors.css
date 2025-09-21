@@ -1,0 +1,57 @@
+body {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6)),
+        url("../img/numbersBg.webp") center / cover no-repeat fixed;
+    font-size: 1.5rem;
+}
+header {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.divider {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 6px solid darkblue;
+    outline: 1px solid black;
+}
+main {
+    max-width: 600px;
+    margin: auto;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    border: 1px solid black;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: darkblue;
+    margin: 8px;
+    padding: 8px;
+}
+body {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+#msgBox {
+    font-size: 1.5rem;
+    background-color: black;
+}
+#guessBox {
+    font-size: 1.5rem;
+}
+#controls {
+    display: inline-flex;
+}
+button {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 8px;
+    padding: 4px;
+    border-radius: 8px;
+}
+#feedback {
+    margin-top: 8px;
+}

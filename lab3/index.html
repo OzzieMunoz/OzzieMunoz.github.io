@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: Quiz</title>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+</head>
+<body>
+    
+    <h1>CSS Quiz</h1>
+
+    <div>1. What is the meaning of life, the universe and everything? </div>
+
+    <label>
+        <input type="number" id="q1" size="5" min="1" max="99">
+    </label>  
+    
+    <h3 id="msgBox1"></h3>
+
+    <br>
+
+    <div>2. What CSS property changes the text color? </div>
+
+    <label>
+        <select id="q2Input">
+            <option value="Text-Color">Text-Color</option>
+            <option value="Color">Color</option>
+            <option value="Font-Color">Font-Color</option>
+        </select>
+    </label> 
+    <h3 id="msgBox2"></h3>
+
+    <br><br>
+
+    <div>3. What CSS property changes the text color? </div>
+    
+    <div id="q3Options"></div>
+
+    <h3 id="msgBox3"></h3>
+
+    <br>
+
+    <div>4. What CSS property changes the text color? </div>
+    <input type="text" id="q4">
+
+    <h3 id="msgBox4"></h3>
+
+    <br>
+
+    <div>5. What CSS property changes the text color? </div>
+
+    <label>
+        <input type="checkbox" id="q5a" value="Text-Color"> Text-Color
+    </label>
+    <label>
+        <input type="checkbox" id="q5b" value="font-color"> Font-Color
+    </label>   
+    <label>
+        <input type="checkbox" id="q5c" value="color"> color
+    </label> 
+
+    <br>
+
+    <button id="quizBtn"> Submit Quiz </button>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
