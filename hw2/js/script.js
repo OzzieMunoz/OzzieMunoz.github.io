@@ -95,14 +95,18 @@ function handleGuess(letter) {
     }
 }
 function guessKey(event) {
-  const key = event.key
+    if (endgame) {
+        return;  
+    }
 
-  if (key >= "a" && key <= "z") {
-    handleGuess(key);
-  } else {
-    feedback.innerHTML = "Invalid: Please enter alphabetic<br>keys only or disable caps lock"
-    feedback.style.color = "red";
-  }
+    const key = event.key
+
+    if (key >= "a" && key <= "z") {
+        handleGuess(key);
+    } else {
+        feedback.innerHTML = "Invalid: Please enter alphabetic<br>keys only or disable caps lock"
+        feedback.style.color = "red";
+    }
 }
 function normalGame() {
     lastDiff = "normal";
