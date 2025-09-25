@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link href="css/css_selector.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Hangman Game</h1>
+    </header>
+
+    <hr>
+
+    <main>
+        <div>
+            <button id="normalBtn">Normal</button>
+            <button id="hardBtn">Hard</button>
+        </div>
+
+        <img id="hangman" src="img/0.jpg" alt="hangman bg">
+
+        <section>
+            <div id="letterBoxes"></div>
+        </section>
+
+        <h3>Previous Guesses:</h3>
+        <div id="guesses"></div>
+
+        <div id="feedback" aria-live="polite"></div> 
+
+        <button id="playAgainBtn" type="button">Play Again!</button>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

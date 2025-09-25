@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  background-color: rgb(239,239,239);
+}
+header {
+  background-color: rgb(75, 75, 75);
+  align-items: center; 
+  padding-bottom: 16px;
+  display: flex;
+}
+h1 {
+  text-align: center;
+  margin: 8px auto;
+  color: lightskyblue;
+  font-size: 2.5rem;
+}
+hr {
+  margin: 0;
+  border: 0;
+  height: 8px;
+  background: lightskyblue;
+}
+main {
+  text-align: center;
+}
+button {
+  margin: 10px;
+  border: 2px solid black;
+  font-size: 1rem;
+  padding: 5px;
+}
+#hangman {
+  border: 5px solid black;
+}
+#letterBoxes .box {
+  display: inline-block;
+  margin-right: 8px;
+  font-family: monospace; 
+  font-size: 2rem;
+}
+#guesses {
+  font-size: 1.5rem;
+}
+#feedback {
+  margin: 5px;
+}
