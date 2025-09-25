@@ -110,10 +110,12 @@ function guessKey(event) {
 }
 function normalGame() {
     lastDiff = "normal";
+    this.blur();
     initializeGame(NORMAL_WORDS);
 }
 function hardGame() {
     lastDiff = "hard";
+    this.blur();
     initializeGame(HARD_WORDS);
 }
 function resetGame() {
