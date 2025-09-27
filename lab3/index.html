@@ -5,66 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 3: Quiz</title>
     <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
-    
-    <h1>CSS Quiz</h1>
+<body class="text-center">
 
-    <div>1. What is the meaning of life, the universe and everything? </div>
-
-    <label>
-        <input type="number" id="q1" size="5" min="1" max="99">
-    </label>  
-    
-    <h3 id="msgBox1"></h3>
-
-    <br>
-
-    <div>2. What CSS property changes the text color? </div>
-
-    <label>
-        <select id="q2Input">
-            <option value="Text-Color">Text-Color</option>
-            <option value="Color">Color</option>
-            <option value="Font-Color">Font-Color</option>
-        </select>
-    </label> 
-    <h3 id="msgBox2"></h3>
-
+    <h1 class="p-5 bg-info">Quiz to Cross the Bridge of Death</h1>
     <br><br>
 
-    <div>3. What CSS property changes the text color? </div>
-    
-    <div id="q3Options"></div>
+    <h3><span id="markImg1"></span>What is your name?</h3>
+    <input type="text" id="q1">
+    <br><br>
+    <div id="q1Feedback"></div>
+    <br><br>
 
-    <h3 id="msgBox3"></h3>
+    <h3><span id="markImg2"></span>What is your quest?</h3>
+    <select id="q2">
+        <option value="">Select One</option>
+        <option value="To seek the holy grail">To seek the holy grail</option>
+        <option value="To find a shrubbery">To find a shrubbery</option>
+        <option value="To cross the bridge">To cross the bridge</option>
+        <option value="To kick out the Romans">To kick out the Romans</option>
+    </select>
+    <br><br>
+    <div id="q2Feedback"></div>
+    <br><br>
 
-    <br>
+    <h3><span id="markImg3"></span>What is your favorite color?</h3>
+    <div id="q3Choices"></div>
+    <br><br>
+    <div id="q3Feedback"></div>
+    <br><br>
 
-    <div>4. What CSS property changes the text color? </div>
-    <input type="text" id="q4">
+    <h3><span id="markImg4"></span>What is the capital of Assyria?</h3>
+    <input type="checkbox" id="Assur"> <label for="Assur">Assur</label>
+    <input type="checkbox" id="Harran"> <label for="Harran">Harran</label>
+    <input type="checkbox" id="I don't know that"> <label for="I don't know that">I don't know that</label>
+    <input type="checkbox" id="Nineveh"> <label for="Nineveh">Nineveh</label>
+    <br><br>
+    <div id="q4Feedback"></div>
+    <br><br>
 
-    <h3 id="msgBox4"></h3>
+    <h3><span id="markImg5"></span>What is the air-speed velocity of an unladen swallow?</h3>
+    <select id="q5">
+        <option value="">Select One</option>
+        <option value="24 mph">24 mph</option>
+        <option value="Are you suggesting coconuts migrate?">Are you suggesting coconuts migrate?</option>
+        <option value="African or European?">African or European?</option>
+        <option value="What do you mean?">What do you mean?</option>
+    </select>
+    <br><br>
+    <div id="q5Feedback"></div>
 
-    <br>
+    <h3 id="validationFdbk" class="bg-danger text-white"></h3>
+    <button class="btn btn-outline-primary"> Submit Quiz </button>
 
-    <div>5. What CSS property changes the text color? </div>
-
-    <label>
-        <input type="checkbox" id="q5a" value="Text-Color"> Text-Color
-    </label>
-    <label>
-        <input type="checkbox" id="q5b" value="font-color"> Font-Color
-    </label>   
-    <label>
-        <input type="checkbox" id="q5c" value="color"> color
-    </label> 
-
-    <br>
-
-    <button id="quizBtn"> Submit Quiz </button>
+    <br><br>
+    <h2 id="totalScore" class="text-info"></h2>
+    <h3 id="totalAttempts"></h3>
+    <h3 id="congratsMsg"></h3>
 
     <script src="js/script.js"></script>
-
 </body>
 </html>
