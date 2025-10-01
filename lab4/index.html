@@ -1,44 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 4: Sign Up Page</title>
+    <title> Sign Up Page </title>
 </head>
+<link href="css/css-selector.css" rel="stylesheet">
 
 <body>
-    <h1> Sign Up Form </h1>
+    <header>
+        <img src="img/csumb.png" alt="CSUMB Name Logo" height="80">
+    </header>
 
-    <fieldset>
-        <legend>Sign Up</legend>
-        First Name: <input type="text"><br>
-        Last Name: <input type="text"><br>
-        Email: <input type="text"><br>
-        Phone Number:<input type="text"><br><br>
-        Zip Code: <input id="zip" type="text"><br>
-        City: <span id="city"></span>
-        <br>
-        Latitude: <span id="lat" type="text"></span>
-        <br>
-        Longitude: <span id="long" type="text"></span>
-        <br><br>
-        State: 
-        <select id="state">
+    <form id="signupForm" action="welcome.html">
+        <h3>Create a new account</h3>
+        <p class="topP">It's quick and easy</p>
 
-        </select><br>
-        Select a County: 
+        <hr id="topHr">
+
+        <input class="text" type="text" name="fName" placeholder="First Name" width="200px">
+        <input class="text" type="text" name="lName" placeholder="Last Name" width="200px"><br>
+        Gender:
+        <input type="radio" name="gender" value="m">Male
+        <input type="radio" name="gender" value="f">Female
+        <input type="radio" name="gender" value="t">Other<br><br><br>
+
+        <select id="state" name="state">
+            <option value="">State</option>
+        </select>
         <select id="county">
-
+            <option value="">County</option>
         </select><br>
+        <input class="text" type="text" id="zip" name="zip" placeholder="Zip Code">
+        <span id="zipError"></span><br>
+        <div class="city-coords">
+            <div>City: <span id="city"></span></div>
+            <div>Coords: <span id="latitude"></span><span id="longitude"></span></div>
+        </div><br><br>
 
-        Desired Username: <input id="userName" type="text"><br>
-        <p id="user"></p>
-        Password: <input id="password" type="password"><br>
-        <p id="suggest"><p>
-        Type Password Again: <input type="password"><br>
-        <input type="submit" value="Sign up!">
-    </fieldset>
+        <input class="text" type="text" id="username" placeholder="Username">
+        Username Available:<span id="usernameError"></span><br>
+        <input class="text" id="password" type="password" placeholder="Password">
+        Password Strength: <span id="passwordError"></span><br>
+        <input class="text" id="passwordRetype" type="password" placeholder="Retype Password">
+        Passwords Match:<span id="passwordRetypeError"></span><br>
+        Suggested Password:<span id="suggestedPwd"></span><br>
+
+        <hr id="btmHr">
+
+        <input id="submitBtn" type="submit" value="Sign up!"><br>
+        <span id="errMsg"></span>
+    </form>
+
+    <hr class="footerHr">
+
+    <footer>
+        <img src="img/logo.png" alt="CSUMB Otter Logo" height="80">
+
+        <p>CST336 Internet Programming © 2025 Munoz<br>
+            This page is student work for academic purposes only.
+        </p>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
