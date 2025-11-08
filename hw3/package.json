@@ -1,19 +1,18 @@
 {
-  "name": "cst336",
+  "name": "cst336-hw3",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Historical Calendar Express App",
+  "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.mjs"
   },
   "keywords": [],
-  "author": "",
+  "author": "Osvaldo Munoz",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "fetch": "^1.1.0",
     "moment": "^2.30.1",
     "node-fetch": "^3.3.2"
   }
