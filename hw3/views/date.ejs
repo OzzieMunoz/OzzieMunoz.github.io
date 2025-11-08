@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>History on <%= fullDate %></title>
+  <link rel="stylesheet" href="/style.css">
+  <script>
+    function toggleSection(sectionId, randomId) {
+      const section = document.getElementById(sectionId);
+      const random = document.getElementById(randomId);
+      if (section.style.display === "none") {
+        section.style.display = "block";
+        random.style.display = "none";
+      } else {
+        section.style.display = "none";
+        random.style.display = "block";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Historical Events on <%= fullDate %>
+  </h1>
+
+  <div class="nav">
+    <button><a href="/">
+        < Back to Home</a></button>
+    <button onclick="location.reload()">Refresh</button>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+      <h2>Events</h2>
+      <div id="randomEvent">
+        On this day in <%= eRandom.year %>, <%= eRandom.description %><br>
+            <% if (eRandom.wikipedia && eRandom.wikipedia.length> 0) { %>
+              <a href="<%= eRandom.wikipedia[0].wikipedia %>" target="_blank">Read more</a>
+              <% } %>
+      </div><br>
+
+      <button onclick="toggleSection('eventsSection','randomEvent')">Deep Dive</button>
+
+      <div id="eventsSection" style="display:none">
+        <% for (let i of eData.events) { %>
+          <p>
+            <strong>
+              <%= i.year %>
+            </strong>: <%= i.description %>
+              <% if (i.wikipedia && i.wikipedia.length> 0) { %>
+                <a href="<%= i.wikipedia[0].wikipedia %>" target="_blank">Read more</a>
+                <% } %>
+          </p>
+          <% } %>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+      <h2>Births</h2>
+      <div id="randomBirth">
+        On this day in <%= bRandom.year %>, <%= bRandom.description %> is born.<br>
+            <% if (bRandom.wikipedia && bRandom.wikipedia.length> 0) { %>
+              <a href="<%= bRandom.wikipedia[0].wikipedia %>" target="_blank">Read more</a>
+              <% } %>
+      </div><br>
+
+      <button onclick="toggleSection('birthsSection','randomBirth')">Deep Dive</button>
+
+      <div id="birthsSection" style="display:none">
+        <% for (let i of bData.births) { %>
+          <p>
+            <strong>
+              <%= i.year %>
+            </strong>: <%= i.description %>
+              <% if (i.wikipedia && i.wikipedia.length> 0) { %>
+                <a href="<%= i.wikipedia[0].wikipedia %>" target="_blank">Read more</a>
+                <% } %>
+          </p>
+          <% } %>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+      <h2>Deaths</h2>
+      <div id="randomDeath">
+        On this day in <%= dRandom.year %>, <%= dRandom.description %> passes away.<br>
+            <% if (dRandom.wikipedia && dRandom.wikipedia.length> 0) { %>
+              <a href="<%= dRandom.wikipedia[0].wikipedia %>" target="_blank">Read more</a>
+              <% } %>
+      </div><br>
+
+      <button onclick="toggleSection('deathsSection','randomDeath')">Deep Dive</button>
+
+      <div id="deathsSection" style="display:none">
+        <% for (let i of dData.deaths) { %>
+          <p>
+            <strong>
+              <%= i.year %>
+            </strong>: <%= i.description %>
+              <% if (i.wikipedia && i.wikipedia.length> 0) { %>
+                <a href="<%= i.wikipedia[0].wikipedia %>" target="_blank">Read more</a>
+                <% } %>
+          </p>
+          <% } %>
+      </div>
+    </div>
+  </div>
+
+  <%- include('partials/footer') %>
+</body>
+
+</html>
